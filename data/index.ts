@@ -1,7 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -72,132 +71,172 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "KwikFix Auto - Car Services Website",
+    des: "Explore automotive services, including fixing and replacing car parts, to keep your car in top condition. .",
+    img: "/p1.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/py.svg"],
+    link: "kwikfixauto.in/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Ripplrs - Community App",
+    des: "Ripplrs is the ultimate app designed to empower changemakers and contributors. Whether you're a seasoned activist or just starting your journey, Ripplrs provides you with all the tools you need to make a lasting impact in your community.",
+    img: "/p2.png",
+    iconLists: ["/re.svg", "/ts.svg", "/node.webp"],
+    link: "play.google.com/store/apps/details?id=com.ripplrs&pcampaignid=web_share",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "KwikFix Auto - Mobile App",
+    des: "Discover a wide range of top-notch car services, right at your fingertips. From routine maintenance to complex repairs, our app connects you with skilled and certified mechanics across Mumbai.",
+    img: "/p1.png",
+    iconLists: ["/re.svg", "/ts.svg", "/py.svg"],
+    link: "https://play.google.com/store/apps/details?id=com.kwikfixauto.consumer&pcampaignid=web_share",
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
+// export const testimonials = [
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+//   {
+//     quote:
+//       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//     name: "Michael Johnson",
+//     title: "Director of AlphaStream Technologies",
+//   },
+// ];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
+// export const companies = [
+//   {
+//     id: 1,
+//     name: "cloudinary",
+//     img: "/cloud.svg",
+//     nameImg: "/cloudName.svg",
+//   },
+//   {
+//     id: 2,
+//     name: "appwrite",
+//     img: "/app.svg",
+//     nameImg: "/appName.svg",
+//   },
+//   {
+//     id: 3,
+//     name: "HOSTINGER",
+//     img: "/host.svg",
+//     nameImg: "/hostName.svg",
+//   },
+//   {
+//     id: 4,
+//     name: "stream",
+//     img: "/s.svg",
+//     nameImg: "/streamName.svg",
+//   },
+//   {
+//     id: 5,
+//     name: "docker.",
+//     img: "/dock.svg",
+//     nameImg: "/dockerName.svg",
+//   },
+// ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
+    title: "Jr Software Engineer",
     desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    achievements:
+      "I quickly adapt to advanced features in React, React Native, and Node.js, allowing me to build scalable, cleanly-coded projects tailored for diverse real-world applications. My experience includes delivering cross-platform mobile apps using React Native and developing full-stack web applications leveraging MongoDB, Express.js, React, and Node.js.",
     className: "md:col-span-2",
+    companyName: "Packapeer Academy Pvt Ltd",
+    Duration: "Jan 2023 - Dec 2023",
     thumbnail: "/exp1.svg",
+    skills: [
+      "React",
+      "Tailwind",
+      "Redux",
+      "Framer Motion",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "PSQL",
+    ],
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
+    title: "Mobile App Dev - React Native",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    achievements:
+      "proficient in modern React stacks such as NextJS and React Native, with strong skills in cross-platform app development, native module integration, and debugging using React Native DevTools. My expertise includes architecting robust, scalable applications, particularly in social media and e-commerce domains. Additionally, I specialize in React Navigation, advanced animations (Reanimated, Lottie), and optimizing app performance. I'm also experienced with Agile methodologies, Jira, Android Studio, and Xcode, facilitating efficient development workflows and effective project management.",
     className: "md:col-span-2", // change to md:col-span-2
+    companyName: "Metric Tree Labs Pvt Ltd",
+    Duration: "Jan 2024 - Jan 2025",
     thumbnail: "/exp2.svg",
+    skills: [
+      "React Native",
+      "Zustand",
+      "Redux",
+      "mobX",
+      "Firebase",
+      "React Query",
+      "Python",
+      "Docker",
+      "Android Studio",
+      "Xcode",
+    ],
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
     title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
+    desc: "Led a team of developers in creating a responsive web application using React.js/Next.js, React Native and Tailwind CSS.",
+    achievements:
+      "Led a team of developers in architecting and building responsive, scalable web and cross-platform mobile applications using React.js, Next.js, React Native, and Tailwind CSS. Successfully implemented advanced frontend features including React Navigation, native module integrations, and sophisticated animations using Reanimated and Lottie. Optimized app performance and enhanced user experience, particularly in social media and e-commerce domains. Employed Agile methodologies and utilized tools such as Jira, Android Studio, Xcode, and React Native DevTools to streamline development processes, debugging, and team collaboration.",
+
+    className: "md:col-span-2", // change to md:col-span-2
+    companyName: "FortuneSoft IT Innovations Pvt Ltd",
+    Duration: "Feb 2025 - Present",
     thumbnail: "/exp4.svg",
+    skills: [
+      "React.js",
+      "Next.js",
+      "React Native",
+      "Tailwind CSS",
+      "React Navigation",
+      "Zustand",
+      "Redux",
+      "MobX",
+      "Reanimated",
+      "Lottie Animations",
+      "React Query",
+      "Firebase",
+      "Agile Methodology",
+      "Jira",
+      "Android Studio",
+      "Xcode",
+      "App Optimization",
+      "Team Leadership",
+    ],
   },
 ];
 

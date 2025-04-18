@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const PinContainer = ({
@@ -10,52 +9,72 @@ export const PinContainer = ({
   href,
   className,
   containerClassName,
+  description,
+  imageUrl,
 }: {
   children: React.ReactNode;
   title?: string;
   href?: string;
   className?: string;
   containerClassName?: string;
+  description?: string;
+  imageUrl?: string;
 }) => {
   const [transform, setTransform] = useState(
     "translate(-50%,-50%) rotateX(0deg)"
   );
 
-  const onMouseEnter = () => {
+  console.log("transform", href);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const onMouseEnter = () =>
     setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.8)");
-  };
-  const onMouseLeave = () => {
+  const onMouseLeave = () =>
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
-  };
+
+  const togglePopup = () => setShowPopup((prev) => !prev);
 
   return (
-    <div
-      className={cn(
-        "relative group/pin z-50  cursor-pointer",
-        containerClassName
-      )}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
+    <>
       <div
-        style={{
-          perspective: "1000px",
-          transform: "rotateX(70deg) translateZ(0deg)",
+        className={cn(
+          "relative group/pin z-50 cursor-pointer",
+          containerClassName
+        )}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        onClick={() => {
+          if (href) {
+            // Ensure href starts with http or https
+            const isAbsolute =
+              href.startsWith("http://") || href.startsWith("https://");
+            const fullUrl = isAbsolute ? href : `https://${href}`;
+
+            window.open(fullUrl, "_blank");
+          } else {
+            togglePopup();
+          }
         }}
-        className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
       >
         <div
           style={{
-            transform: transform,
+            perspective: "1000px",
+            transform: "rotateX(70deg) translateZ(0deg)",
           }}
-          // remove  bg-black
-          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+          className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
         >
-          <div className={cn(" relative z-50 ", className)}>{children}</div>
+          <div
+            style={{ transform: transform }}
+            className="absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+          >
+            <div className={cn("relative z-50", className)}>{children}</div>
+          </div>
         </div>
+        <PinPerspective title={title} href={href} />
       </div>
-      <PinPerspective title={title} href={href} />
-    </div>
+
+      {/* Popup */}
+    </>
   );
 };
 

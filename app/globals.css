@@ -70,6 +70,10 @@
   * {
     @apply border-border !scroll-smooth;
   }
+     html {
+       scroll-padding-top: 200px;
+       /* Adjust based on your header height */
+     }
   body {
     @apply bg-background text-foreground;
   }
